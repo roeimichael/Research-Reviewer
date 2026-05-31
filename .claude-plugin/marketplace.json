@@ -1,0 +1,16 @@
+{
+  "name": "research-reviewer",
+  "owner": {
+    "name": "Roey M.",
+    "email": "roeym111@gmail.com"
+  },
+  "description": "Research Reviewer — an iterative, multi-agent academic peer-review skill for Claude Code.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "research-reviewer",
+      "source": "./",
+      "description": "Respawns a fresh 'harsh reviewer' agent each round that blind-scores your paper /100 and refactors it to 100/100."
+    }
+  ]
+}

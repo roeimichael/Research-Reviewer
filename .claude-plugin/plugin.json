@@ -1,0 +1,20 @@
+{
+  "name": "research-reviewer",
+  "description": "Iterative multi-agent academic peer-review pipeline: respawns a fresh 'harsh reviewer' agent each round that blind-scores your paper out of 100 and refactors it toward a flawless 100/100.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Roey M.",
+    "email": "roeym111@gmail.com"
+  },
+  "homepage": "https://github.com/roeimichael/Research-Reviewer",
+  "repository": "https://github.com/roeimichael/Research-Reviewer",
+  "license": "MIT",
+  "keywords": [
+    "academic",
+    "peer-review",
+    "research",
+    "thesis",
+    "multi-agent",
+    "skill"
+  ]
+}

@@ -57,23 +57,35 @@ A new agent every loop = no cognitive bias, no "I already approved this," no ove
 
 ## Install
 
-Drop the skill into your project (or your home `~/.claude/`) so Claude Code can find it:
+### Option A — Plugin marketplace (recommended, one line)
+
+This repo is a Claude Code **plugin marketplace**. Inside Claude Code:
+
+```text
+/plugin marketplace add roeimichael/Research-Reviewer
+/plugin install research-reviewer@research-reviewer
+```
+
+That's it — the `research-reviewer` skill is now available in every session. Update later
+with `/plugin marketplace update research-reviewer`, remove with
+`/plugin uninstall research-reviewer@research-reviewer`.
+
+### Option B — Manual copy
+
+Drop the skill straight into a `skills/` folder Claude Code already reads:
 
 ```bash
-git clone https://github.com/<your-username>/Research-Reviewer.git
-# copy the skill into your project's skills folder
-cp -r Research-Reviewer/.claude/skills/research-reviewer .claude/skills/
+git clone https://github.com/roeimichael/Research-Reviewer.git
+cp -r Research-Reviewer/skills/research-reviewer ~/.claude/skills/   # global, all projects
+# or:  cp -r Research-Reviewer/skills/research-reviewer .claude/skills/   # this project only
 ```
 
 On Windows (PowerShell):
 
 ```powershell
-git clone https://github.com/<your-username>/Research-Reviewer.git
-Copy-Item -Recurse Research-Reviewer\.claude\skills\research-reviewer .claude\skills\
+git clone https://github.com/roeimichael/Research-Reviewer.git
+Copy-Item -Recurse Research-Reviewer\skills\research-reviewer ~\.claude\skills\
 ```
-
-> **Tip:** put it in `~/.claude/skills/research-reviewer/` instead to make it available in
-> *every* project, not just one.
 
 ## Usage
 
